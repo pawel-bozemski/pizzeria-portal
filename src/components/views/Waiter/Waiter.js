@@ -3,10 +3,10 @@ import styles from './Waiter.module.scss';
 import { Link } from 'react-router-dom';
 
 
-const Waiter = (id) => {
+const Waiter = () => {
   return (
     <div className={styles.component}>
-      <Link to={`${process.env.PUBLIC_URL}/order/${id}`}>
+      <Link to={`${process.env.PUBLIC_URL}/order/id`}>
         <h2>Order Id</h2>
       </Link>
       <Link to={`${process.env.PUBLIC_URL}/order/new`}>
