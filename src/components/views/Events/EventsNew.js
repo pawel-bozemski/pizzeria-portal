@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Events.module.scss';
 
-const EventsId = () => {
+const EventsNew = () => {
   return (
     <div className={styles.component}>
-      <h2>EventsId view</h2>
+      <h2>EventsNew view</h2>
     </div>
   );
 };
 
-export default EventsId;
+export default EventsNew;

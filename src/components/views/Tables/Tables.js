@@ -91,6 +91,13 @@ const Tables = () => {
   return (
     <div>
       <Typography  variant="h5" align='center'  color='primary'>Table reservation</Typography>
+      <Link exact to={process.env.PUBLIC_URL + '/tables/booking/new'}>
+        <Button>Add new reservation</Button>
+      </Link>
+      <Link exact to={process.env.PUBLIC_URL + '/tables/events/new'}>
+        <Button>Add new Event</Button>
+      </Link>
+
       <MuiPickersUtilsProvider utils={DateFnsUtils}>
         <Grid container justify="space-around">
           <KeyboardDatePicker
