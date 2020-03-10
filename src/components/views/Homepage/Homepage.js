@@ -97,7 +97,7 @@ const Dashboard = () => {
           </TableHead>
           <TableBody>
             {stats.map(stats => (
-              <TableRow key={stats.type}>
+              <TableRow key={stats}>
                 <TableCell align="left">{stats.type}</TableCell>
                 <TableCell align="center">{stats.count}</TableCell>
                 <TableCell align="right">${stats.total}</TableCell>
