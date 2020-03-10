@@ -20,7 +20,6 @@ import { ThemeProvider } from '@material-ui/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {main: '#2B4C6F'},
-    // secondary: {main: '#11cb5f'},
   },
 });
 
@@ -37,13 +36,13 @@ function App() {
               <Route exact path={process.env.PUBLIC_URL + '/login'} component={Login} />
 
               <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/booking/id'} component={BookingId} />
+              <Route exact path={process.env.PUBLIC_URL + '/tables/booking/:id'} component={BookingId} />
               <Route exact path={process.env.PUBLIC_URL + '/tables/booking/new'} component={BookingNew} />
-              <Route exact path={process.env.PUBLIC_URL + '/tables/events/id'} component={EventsId} />
+              <Route exact path={process.env.PUBLIC_URL + '/tables/events/:id'} component={EventsId} />
               <Route exact path={process.env.PUBLIC_URL + '/tables/events/new'} component={EventsNew} />
 
               <Route exact path={process.env.PUBLIC_URL + '/waiter'} component={Waiter} />
-              <Route exact path={process.env.PUBLIC_URL + '/order/id'} component={OrderId} />
+              <Route exact path={process.env.PUBLIC_URL + '/order/:id'} component={OrderId} />
               <Route exact path={process.env.PUBLIC_URL + '/order/new'} component={OrderNew} />
 
               <Route exact path={process.env.PUBLIC_URL + '/kitchen'} component={Kitchen} />
